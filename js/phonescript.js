@@ -1,6 +1,5 @@
 'use strict';
 // let start = document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
-это он
 
 const search = document.querySelector('.search__btn').onclick = function() {
   
