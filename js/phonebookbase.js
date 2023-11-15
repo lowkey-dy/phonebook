@@ -167,7 +167,7 @@ const phoneDataBase = [
     { id:'10250054', surname:'Шабашов', name:'Николай Александрович', phone:'79048995792', light:'988', photo:'img/no-avatar2.png'},
     { id:'10030870', surname:'Шевчук ', name:'Вадим Владимирович', phone:'79029483747', light:'2003', photo:'img/no-avatar2.png'},
     { id:'10042292', surname:'Шубин', name:'Руслан Леонидович', phone:'79232079147', light:'567', photo:'img/shub.jpg'},
-    { id:'10005499', surname:'Шульдещов', name:'Алексей Игоревич', phone:'79135069744', light:'307', photo:'img/no-avatar2.png'},  
+    { id:'10005499', surname:'Шульдешов', name:'Алексей Игоревич', phone:'79135069744', light:'307', photo:'img/no-avatar2.png'},  
     { id:'10008385', surname:'Юдин', name:'Сергей Олегович', phone:'79134909088', light:'1187', photo:'img/no-avatar2.png'},                                        
     { id:'10015356', surname:'Яковлев', name:'Вадим Сергеевич', phone:'79135058927', light:'1141', photo:'img/no-avatar2.png'},
     { id:'10055604', surname:'Ярапов', name:'Дмитрий Сергеевич', phone:'+7(902)552-32-82', light:'619', photo:'img/im.jpg'},
