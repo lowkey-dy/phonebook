@@ -1,7 +1,8 @@
 'use strict';
 // let start = document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
+это он
 
-const myWorkers = document.querySelector('.search__btn').onclick = function() {
+const search = document.querySelector('.search__btn').onclick = function() {
   
     //Если ввели с маленькой буквы, меняем на заглавную
     const enteredName = document.querySelector('.surname__input').value.trim(),
@@ -13,12 +14,12 @@ const myWorkers = document.querySelector('.search__btn').onclick = function() {
         return false;
     }; 
 
-    // Поиск в базе данных
+    // Поиск в базе данных по фамилии
     let userName = phoneDataBase.find(el => el.name == nameUpperCase || el.surname == nameUpperCase || el.surname == nameUpperCase);
    
-   // Вывод данных из базы данных в HTML 
+   // Вывод данных из базы данных в HTML (Фамилия, Имя, Телефон, Номер фонаря, Табельный номер)
     function writeUserInfo () { 
-        const testArray = document.querySelectorAll('.test');
+        const testArray = document.querySelectorAll('.text_field');
 
         for (let i = 0; i < testArray.length; i ++) {
             if (testArray[i] == testArray[0]) {
@@ -37,7 +38,7 @@ const myWorkers = document.querySelector('.search__btn').onclick = function() {
     writeUserInfo();
 
     // Достает фотку из базы данных
-    document.querySelector('.show-pole_photo').style.backgroundImage = 'url("'+ userName.photo +'")';
+    document.querySelector('.photo-field').style.backgroundImage = 'url("'+ userName.photo +'")';
 
 
     // const check = document.querySelectorAll('.test');
@@ -53,10 +54,10 @@ const myWorkers = document.querySelector('.search__btn').onclick = function() {
 };
 
 // Чекает и удаляет данные в полях
-document.querySelector('.clear__btn').onclick = function() {
+const reset = document.querySelector('.clear__btn').onclick = function() {
     
     //Очищает имя и фамилию
-    const textRemove = document.querySelectorAll('.show-pole'), 
+    const textRemove = document.querySelectorAll('.name-field'), 
           deleteText = (arr) => { 
         arr.forEach(item => {
            item.textContent = '';
@@ -65,9 +66,10 @@ document.querySelector('.clear__btn').onclick = function() {
     deleteText(textRemove);
   
     //Очищает инпут
-    document.querySelector('.surname__input').value = ''; 
+    document.querySelector('.surname__input').value = '';
 
-    document.querySelector('.field_photo').style.backgroundImage = 'url(img/BgF.png)';
+    //Убирает фото работника
+    document.querySelector('.photo-field').style.backgroundImage = 'url(img/BgF.png)';
 
     document.querySelector('.show-field_1').textContent = 'Телефон';
     document.querySelector('.show-field_2').textContent = 'Фонарь';

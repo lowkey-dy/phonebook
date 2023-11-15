@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /data
+/img
 /js/jsExemple
 /.pnp
 .pnp.js
