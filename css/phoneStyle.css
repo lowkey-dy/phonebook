@@ -272,6 +272,56 @@ input {
     background:transparent;
     border: 1px solid #ffff;
     color:#ffff;
+    position: relative;
+}
+
+.arrow {
+    position:relative;
+    width: 17px;
+    height: 0.1rem;
+    background-color:#fff;
+    right: -48px;
+    border-radius:1px;
+    z-index: 150;
+    rotate: 0deg;
+}
+
+.arrow::after {
+    position:absolute;
+    content:'';
+    width: 13px;
+    height: 0.1rem;
+    background-color:#fff;
+    left: -1px;
+    rotate: -41deg;
+    top:-4px;
+    border-radius:1px;
+}
+
+.arrow::before {
+    position:absolute;
+    content:'';
+    width: 13px;
+    height: 0.1rem;
+    background-color:#fff;
+    left: -1px;
+    rotate: 41deg;
+    top:4px;
+    border-radius:1px;
+}
+
+.clear__btn:hover .arrow {
+    background-color:#007EC5;
+    rotate: 50deg;
+    transition: 0.3s;
+}
+
+.clear__btn:hover .arrow::before {
+    background-color:#007EC5;
+}
+
+.clear__btn:hover .arrow::after {
+    background-color:#007EC5;
 }
 
 .clear__btn:hover {
@@ -289,23 +339,22 @@ input {
 
 .clear__btn::after {
     position: absolute;
-    content: url('../img/arrow2.svg');
+    content: url('');
     background:transparent;
     border: 1px solid #ffff;
     border-radius: 100%;
     color:#ffff;
     width: 40px;
     height: 39px;
-    right: 0;
+    right: -1px;
     top:-1px;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .search__btn::after {
     position: absolute;
-    content: url('../img/arrow.svg');
+    content: url('');
     width: 40px;
     height: 39px;
     border: 1px solid #ffff;
@@ -325,15 +374,21 @@ input {
     transition: background-color .25s linear,border-color .25s linear,color .25s linear;
 }
 
+.search__btn:hover .arrow {
+    /* background-color:#007EC5; */
+    rotate: 120deg;
+    transition: 0.3s;
+}
+
 .search__btn:hover::after {
     color:#fff;
     background-color:#004c97;
     transition: background-color .24s linear,border-color .24s linear,color .24s linear;
 }
 
-.search__btn img {
-    position: absolute;
-    right: 0;
+.serch_arrow {
+    rotate: 180deg;
+    right: -53px;
 }
 
 .phone-book__bottom {
