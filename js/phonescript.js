@@ -14,12 +14,12 @@ const search = document.querySelector('.search__btn').onclick = function() {
     }; 
 
     // Поиск в базе данных по фамилии
-    let userName = phoneDataBase.find(el => el.name == nameUpperCase || el.surname == nameUpperCase || el.surname == nameUpperCase);
-   
+    let userName = phoneDataBase.find(el => el.name == nameUpperCase || el.surname == nameUpperCase);
+ 
    // Вывод данных из базы данных в HTML (Фамилия, Имя, Телефон, Номер фонаря, Табельный номер)
     function writeUserInfo () { 
         const testArray = document.querySelectorAll('.text_field');
-
+        
         for (let i = 0; i < testArray.length; i ++) {
             if (testArray[i] == testArray[0]) {
                 testArray[0].textContent = userName.surname;
@@ -31,7 +31,7 @@ const search = document.querySelector('.search__btn').onclick = function() {
                 testArray[3].textContent = userName.light;
             } if (testArray[i] == testArray[4]) {
                 testArray[4].textContent = userName.id;
-            }
+            } 
         }
     }
     writeUserInfo();
@@ -39,7 +39,7 @@ const search = document.querySelector('.search__btn').onclick = function() {
     // Достает фотку из базы данных
     document.querySelector('.photo-field').style.backgroundImage = 'url("'+ userName.photo +'")';
 
-
+    
     // const check = document.querySelectorAll('.test');
     // const addData = (arr) => {
     //     arr.forEach(item => {
