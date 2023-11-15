@@ -1,0 +1,80 @@
+'use strict';
+// let start = document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
+
+const myWorkers = document.querySelector('.search__btn').onclick = function() {
+  
+    //Если ввели с маленькой буквы, меняем на заглавную
+    const enteredName = document.querySelector('.surname__input').value.trim(),
+          nameUpperCase = enteredName.charAt(0).toUpperCase() + enteredName.slice(1); 
+
+    // Запрещает нажимать кнопку Показатьб, если ничего не ввели и вводят числа
+    if (enteredName == '' || enteredName === Number) {
+        alert('Введите фамилию, полностью, на русском языке.');
+        return false;
+    }; 
+
+    // Поиск в базе данных
+    let userName = phoneDataBase.find(el => el.name == nameUpperCase || el.surname == nameUpperCase || el.surname == nameUpperCase);
+   
+   // Вывод данных из базы данных в HTML 
+    function writeUserInfo () { 
+        const testArray = document.querySelectorAll('.test');
+
+        for (let i = 0; i < testArray.length; i ++) {
+            if (testArray[i] == testArray[0]) {
+                testArray[0].textContent = userName.surname;
+            } if (testArray[i] == testArray[1]) {
+                testArray[i].textContent = userName.name;
+            } if (testArray[i] == testArray[2]) {
+                testArray[2].textContent = userName.phone;
+            } if (testArray[i] == testArray[3]) {
+                testArray[3].textContent = userName.light;
+            } if (testArray[i] == testArray[4]) {
+                testArray[4].textContent = userName.id;
+            }
+        }
+    }
+    writeUserInfo();
+
+    // Достает фотку из базы данных
+    document.querySelector('.show-pole_photo').style.backgroundImage = 'url("'+ userName.photo +'")';
+
+
+    // const check = document.querySelectorAll('.test');
+    // const addData = (arr) => {
+    //     arr.forEach(item => {
+         
+            
+    //     }); 
+    // }
+    // addData(check);
+    // console.dir(check);
+
+};
+
+// Чекает и удаляет данные в полях
+document.querySelector('.clear__btn').onclick = function() {
+    
+    //Очищает имя и фамилию
+    const textRemove = document.querySelectorAll('.show-pole'), 
+          deleteText = (arr) => { 
+        arr.forEach(item => {
+           item.textContent = '';
+        });
+    };
+    deleteText(textRemove);
+  
+    //Очищает инпут
+    document.querySelector('.surname__input').value = ''; 
+
+    document.querySelector('.field_photo').style.backgroundImage = 'url(img/BgF.png)';
+
+    document.querySelector('.show-field_1').textContent = 'Телефон';
+    document.querySelector('.show-field_2').textContent = 'Фонарь';
+    document.querySelector('.show-field_3').textContent = 'Табельный';       //<--- Переписать в массив
+
+};
+
+// });
+
+console.dir(phoneDataBase);
