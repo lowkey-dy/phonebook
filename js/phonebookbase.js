@@ -95,7 +95,7 @@ const phoneDataBase = [
     { id:'10065261', surname:'Лачинов', name:'Джалалдин Эседович', phone:'79233233303', light:'1397', photo:'img/no-avatar2.png'},
     { id:'10037910', surname:'Лебедев', name:'Александр Леонидович', phone:'79134917442', light:'23', photo:'img/no-avatar2.png'},
     { id:'10253888', surname:'Левченко', name:'Дмитрий Владимирович', phone:'79050936696', light:'6188', photo:'img/no-avatar2.png'},
-    { id:'10025186', surname:'Лещенко', name:'Антон Андреевич', phone:'79131610342', light:'458', photo:'img/lesh.jpg', photo:'img/no-avatar2.png'},  
+    { id:'10025186', surname:'Лещенко', name:'Антон Андреевич', phone:'79131610342', light:'458', photo:'img/lesh.jpg', photo:'img/lesh.jpg'},  
     { id:'10013331', surname:'Лисовский', name:'Роман Борисович', phone:'79131631077', light:'328', photo:'img/no-avatar2.png'},                                        
     { id:'10059004', surname:'Литовченко', name:'Евгений Олегович', phone:'79069043272', light:'327', photo:'img/no-avatar2.png'},
     { id:'10056908', surname:'Лушников', name:'Антон Геннадьевич', phone:'79050905566', light:'637', photo:'img/no-avatar2.png'},
