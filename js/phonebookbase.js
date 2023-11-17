@@ -28,7 +28,7 @@ const phoneDataBase = [
     { id:'10254243', surname:'Волченко', name:'Никита Андреевич', phone:'79135233464', light:'431', photo:'img/no-avatar2.png'},
     { id:'10253298', surname:'Воронин', name:'Николай Владимирович', phone:'79834551798', light:'806', photo:'img/no-avatar2.png'},
     { id:'10031424', surname:'Вшивков', name:'Иван Сергеевич', phone:'79876285131', light:'473', photo:'img/no-avatar2.png'},
-    { id:'10033256', surname:'Гаврилин', name:'Николай Владимирович', phone:'79878523580', light:'847', photo:'img/niko.jpg', photo:'img/no-avatar2.png'},
+    { id:'10033256', surname:'Гаврилин', name:'Николай Владимирович', phone:'79878523580', light:'847', photo:'img/niko.jpg', photo:'img/niko.jpg'},
     { id:'10043925', surname:'Гарицкий', name:'Александр Александрович', phone:'79134901719', light:'185', photo:'img/no-avatar2.png'},  
     { id:'10040449', surname:'Гасымов', name:'Вусаль Фикрет оглы', phone:'79050906600', light:'526', photo:'img/vusal.jpg', photo:'img/no-avatar2.png'},                                        
     { id:'10258874', surname:'Гатиев', name:'Артур Хетагович', phone:'79134972008', light:'608', photo:'img/no-avatar2.png'},
