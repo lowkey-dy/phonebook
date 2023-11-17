@@ -40,6 +40,7 @@ a {
     color:#ffff;
 }
 
+
 .d-flex {
     display: flex;
     
@@ -79,7 +80,6 @@ body {
     top: -50px;
     z-index: 10;
 }
-
 
 h1, h2 {
     font-family: 'Proxima Nova Bl';
