@@ -30,7 +30,7 @@ const phoneDataBase = [
     { id:'10031424', surname:'Вшивков', name:'Иван Сергеевич', phone:'79876285131', light:'473', photo:'img/no-avatar2.png'},
     { id:'10033256', surname:'Гаврилин', name:'Николай Владимирович', phone:'79878523580', light:'847', photo:'img/niko.jpg', photo:'img/niko.jpg'},
     { id:'10043925', surname:'Гарицкий', name:'Александр Александрович', phone:'79134901719', light:'185', photo:'img/no-avatar2.png'},  
-    { id:'10040449', surname:'Гасымов', name:'Вусаль Фикрет оглы', phone:'+7(905)090-66-00', light:'526', photo:'img/vusal.jpg', photo:'img/no-avatar2.png'},                                        
+    { id:'10040449', surname:'Гасымов', name:'Вусаль Фикрет оглы', phone:'+7(905)090-66-00', light:'526', photo:'img/vusal.jpg', photo:'img/vusal.jpg'},                                        
     { id:'10258874', surname:'Гатиев', name:'Артур Хетагович', phone:'79134972008', light:'608', photo:'img/no-avatar2.png'},
     { id:'10032863', surname:'Герасимов', name:'Александр Александрович', phone:'79956190625', light:'', photo:'img/no-avatar2.png'},
     { id:'10064154', surname:'Герасимчук', name:'Артём Валериевич', phone:'79235762633', light:'903', photo:'img/no-avatar2.png'},
