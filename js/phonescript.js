@@ -17,6 +17,8 @@
 
 // };
 
+
+
 //Запускает поиск при нажатии на "Enter"
 document.getElementById('search_input').addEventListener('keypress', function (e){
     if (e.code === 'Enter') {
@@ -24,8 +26,9 @@ document.getElementById('search_input').addEventListener('keypress', function (e
     }
 });
 
+
 const search = document.querySelector('.search__btn').onclick = function() {
-  
+
     //Если ввели с маленькой буквы, меняем на заглавную
     const enteredName = document.querySelector('.surname__input').value.trim(),
           nameUpperCase = enteredName.charAt(0).toUpperCase() + enteredName.slice(1); 
@@ -40,8 +43,10 @@ const search = document.querySelector('.search__btn').onclick = function() {
     let userName = phoneDataBase.find(el => el.name == nameUpperCase || el.surname == nameUpperCase);
  
    // Вывод данных из базы данных в HTML (Фамилия, Имя, Телефон, Номер фонаря, Табельный номер)
+   const testArray = document.querySelectorAll('.text_field');
+
     function writeUserInfo () { 
-        const testArray = document.querySelectorAll('.text_field');
+        // const testArray = document.querySelectorAll('.text_field');
         
         for (let i = 0; i < testArray.length; i ++) {
             if (testArray[i] == testArray[0]) {
@@ -59,6 +64,16 @@ const search = document.querySelector('.search__btn').onclick = function() {
     }
     writeUserInfo();
 
+    const subtitle = document.querySelector('.subtitle');
+
+    subtitle.textContent = userName.prof;
+
+    // if (phoneDataBase ) {
+    //     subtitle.textContent = 'Введите фамилию и я покажу';
+    // };
+
+    console.dir(userName);
+
     // Достает фотку из базы данных
     document.querySelector('.photo-field').style.backgroundImage = 'url("'+ userName.photo +'")';
 
@@ -74,6 +89,14 @@ const search = document.querySelector('.search__btn').onclick = function() {
     // console.dir(check);
 
 };
+
+// Чистим все нажатием на 'Escape'
+document.getElementById('search_input').addEventListener('keydown', function (event){
+
+    if (event.code === 'Escape') {
+        document.getElementById("clear__btn").click();
+    }
+});
 
 
 // Чекает и удаляет данные в полях
@@ -97,6 +120,7 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
     document.querySelector('.show-field_1').textContent = 'Телефон';
     document.querySelector('.show-field_2').textContent = 'Фонарь';
     document.querySelector('.show-field_3').textContent = 'Табельный';       //<--- Переписать в массив
+    document.querySelector('.show-field_4').textContent = 'Введите фамилию и я покажу';       //<--- Переписать в массив
 
 };
 
