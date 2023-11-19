@@ -62,7 +62,7 @@ const phoneDataBase = [
     { id:'10056657', surname:'Зайцев В', name:'Владимир Александрович', phone:'79135309615', light:'1021', photo:'img/no-avatar2.png'},  
     { id:'10250189', surname:'Закирьянов', name:'Анфир Ильдарович', phone:'79134960675', light:'1484', photo:'img/no-avatar2.png'},                                        
     // { id:'10250190', surname:'Закирьянов Д', name:'Данияр Ильдарович', phone:'79059983518', light:'1327', photo:'img/no-avatar2.png'},
-    { id:'10263224', surname:'Золотухин', name:'Владимир Владимирович', phone:'79832611423', light:'960', photo:'img/gold.jpg', prof:'Заместитель начальника участка'},
+    { id:'10263224', surname:'Золотухин', name:'Владимир Владимирович', phone:'79832611423', light:'960', photo:'img/gold.jpg', prof:'ГРОЗ'},
     { id:'10035633', surname:'Иваненко', name:'Виталий Александрович', phone:'79069011777', light:'33', photo:'img/no-avatar2.png'},
     { id:'10256824', surname:'Иванов', name:'Вячеслав Андреевич', phone:'79029444832', light:'705', photo:'img/no-avatar2.png'},
     { id:'10253321', surname:'Ижбяков', name:'Александр Сергеевич', phone:'79134915672', light:'1219', photo:'img/no-avatar2.png'},  
