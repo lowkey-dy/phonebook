@@ -17,13 +17,20 @@
 
 // };
 
+//Запускает поиск при нажатии на "Enter"
+document.getElementById('search_input').addEventListener('keypress', function (e){
+    if (e.code === 'Enter') {
+        document.getElementById("search_btn").click();
+    }
+});
+
 const search = document.querySelector('.search__btn').onclick = function() {
   
     //Если ввели с маленькой буквы, меняем на заглавную
     const enteredName = document.querySelector('.surname__input').value.trim(),
           nameUpperCase = enteredName.charAt(0).toUpperCase() + enteredName.slice(1); 
 
-    // Запрещает нажимать кнопку Показатьб, если ничего не ввели и вводят числа
+    // Запрещает нажимать кнопку Показать, если ничего не ввели и вводят числа
     if (enteredName == '' || enteredName === Number) {
         alert('Введите фамилию, полностью, на русском языке.');
         return false;
@@ -67,6 +74,7 @@ const search = document.querySelector('.search__btn').onclick = function() {
     // console.dir(check);
 
 };
+
 
 // Чекает и удаляет данные в полях
 const reset = document.querySelector('.clear__btn').onclick = function() {
