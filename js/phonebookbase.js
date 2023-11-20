@@ -137,7 +137,7 @@ const phoneDataBase = [
     { id:'10031196', surname:'Семенов', name:'Николай Александрович', phone:'79135005355', light:'2174', photo:'img/no-avatar2.png'},
     { id:'10254227', surname:'Семенюк', name:'Александр Юрьевич', phone:'79134959087', light:'2326', photo:'img/no-avatar2.png'},
     { id:'10047418', surname:'Синеговский', name:'Павел Сергеевич', phone:'79134995256', light:'1300', photo:'img/no-avatar2.png'},
-    { id:'10056671', surname:'Сокольских', name:'Алексей Сергеевич', phone:'+7(913)161-35-55', light:'2167', photo:'img/sokol.jpg', prof:'Заместитель начальника участка'},  
+    { id:'10056671', surname:'Сокольских', name:'Алексей Сергеевич', phone:'+7(913)161-35-55', light:'2167', photo:'img/sokol2.jpg', prof:'Заместитель начальника участка'},  
     { id:'10067758', surname:'Стоянец', name:'Александр Иванович', phone:'79153877617', light:'25', photo:'img/no-avatar2.png'},                                        
     { id:'10064958', surname:'Сулейманов', name:'Загидин Джанбулатович', phone:'79233477977', light:'1947', photo:'img/no-avatar2.png'},
     { id:'10024615', surname:'Султанбек', name:'уулу Санжарбек', phone:'79048990860', light:'361', photo:'img/no-avatar2.png'},
