@@ -38,7 +38,7 @@ const phoneDataBase = [
     { id:'10006198', surname:'Горбунов', name:'Иван Николаевич', phone:'79135035668', light:'230', photo:'img/no-avatar2.png'},  
     { id:'10269954', surname:'Гордиенко', name:'Илья Александрович', phone:'79135045457', light:'254', photo:'img/no-avatar2.png'},                                        
     { id:'10049176', surname:'Горлин', name:'Алексей Михайлович', phone:'79232047205', light:'2305', photo:'img/no-avatar2.png'},
-    { id:'10015860', surname:'Гроо', name:'Александр Александрович', phone:'79134960290', light:'1969', photo:'img/no-avatar2.png'},
+    { id:'10015860', surname:'Гроо', name:'Александр Александрович', phone:'79134960290', light:'1969', photo:'img/no-avatar2.png', prof:'Машинист ПСМ'},
     { id:'10048268', surname:'Гудиев', name:'Тамерлан Эльбрусович', phone:'+7(913)167-69-46', light:'440', photo:'img/gudi.jpg', prof:'Начальник участка'},
     { id:'10016266', surname:'Гуреев', name:'Константин Владимирович', phone:'79059983381', light:'420', photo:'img/no-avatar2.png'},
     { id:'10050572', surname:'Гусев', name:'Кирилл Михайлович', phone:'79080324288', light:'654', photo:'img/no-avatar2.png'},  
