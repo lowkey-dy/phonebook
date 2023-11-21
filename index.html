@@ -17,7 +17,7 @@
     <!-- <div class="phone-book_backside">
         Я тащусь
     </div> -->
-    <div class="phone-book">
+    <div id = "phone-book" class="phone-book">
         <div class="phone-book__top">
             <a href="#" class="logo"><img src="img/nnlogo.svg" alt="Норникель" class="logo__img"></a>
             <p class="phone-book__top__text"><span>ПУБР</span><br>рудник “Октябрьский”</p>
@@ -65,27 +65,28 @@
                 <span class="info"></span>
             </div>
         </div>
-        <div class="phone-book__inputs">
-            <input id="search_input" type="search" placeholder="Введите фамилию" class="phone-book__input surname__input">
-            <div class="phone-book__btns">
-                <button id = "search_btn" type class="phone-book_btn search__btn">Показать <span class="arrow serch_arrow"></span><!--<img src="/img/Group 2.svg" alt="">--></button>
-                <button id = "clear__btn" type class="phone-book_btn clear__btn">Очистить <span class="arrow"></span></button>
+        <div class="search__wrapper">
+            <div class="phone-book__inputs">
+                <input id="search_input" type="search" placeholder="Введите фамилию" class="phone-book__input surname__input">
+                <div class="phone-book__btns">
+                    <button id = "search_btn" type class="phone-book_btn search__btn">Показать <span class="arrow serch_arrow"></span><!--<img src="/img/Group 2.svg" alt="">--></button>
+                    <button id = "clear__btn" type class="phone-book_btn clear__btn">Очистить <span class="arrow"></span></button>
+                </div>
+            </div>
+            <div class="search__result">
+                <!-- <ul>
+                    <li>Ярапов</li>
+                    <li>Яковлев</li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
             </div>
         </div>
         <footer class="phone-book__bottom">
             <span class="copyright">© 2023 Дмитрий Ярапов</span>
         </footer>
     </div>
-    <!-- <ul class="worker__list">
-        <li class="worker__list_item">Ярапов Дмитрий Сергеевич</li>
-        <li class="worker__list_item">Гудиев Тамерлан Эльбрусович</li>
-        <li class="worker__list_item">Гасымов Вусаль Фикрет оглы</li>
-        <li class="worker__list_item">Сокольских Алексей Сергеевич</li>
-        <li class="worker__list_item">Золотухин Владимир Владимирович</li>
-    </ul> -->
-<!-- </div> -->
-    <script src="js/phonebookbase.js"></script>  
     <script src="js/phonescript.js"></script> 
-    
+    <script src="js/phonebookbase.js"></script>  
 </body>
 </html>

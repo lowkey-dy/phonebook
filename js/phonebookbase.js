@@ -86,8 +86,8 @@ const phoneDataBase = [
     { id:'10038215', surname:'Корольков', name:'Алексей Валерьевич', phone:'79135046320', light:'811', photo:'img/no-avatar2.png'},  
     { id:'10057645', surname:'Красничкин', name:'Олег Иванович', phone:'79082197466', light:'715', photo:'img/no-avatar2.png', prof:'Сменный механик'},                                        
     { id:'10017216', surname:'Кривонос', name:'Николай Вячеславович', phone:'79620753000', light:'439', photo:'img/no-avatar2.png'},
-    { id:'10259158', surname:'Кудзиев А', name:'Алан Роландович', phone:'79888383239', light:'2107', photo:'img/no-avatar2.png'},
-    { id:'10021919', surname:'Кудзиев Г', name:'Георгий Георгиевич', phone:'79135260489', light:'764', photo:'img/no-avatar2.png'},
+    { id:'10259158', surname:'Кудзиев Алан', name:'Роландович', phone:'79888383239', light:'2107', photo:'img/no-avatar2.png'},
+    { id:'10021919', surname:'Кудзиев Георгий', name:'Георгиевич', phone:'79135260489', light:'764', photo:'img/no-avatar2.png'},
     { id:'10035541', surname:'Кузнецов', name:'Владимир Александрович', phone:'79650897607', light:'956', photo:'img/no-avatar2.png'},
     { id:'10256257', surname:'Кунучаков', name:'Аймир Сергеевич', phone:'79833709083', light:'683', photo:'img/no-avatar2.png'},  
     { id:'10256244', surname:'Купцов', name:'Денис Александрович', phone:'79825346340', light:'2651', photo:'img/no-avatar2.png'},                                        
@@ -175,29 +175,25 @@ const phoneDataBase = [
     { id:'', surname:'', name:'', phone:'', light:''},
 ];
 
+const base = [
+    'Ярапов ',
+    'Гудиев Тамерлан Эльбрусович',
+    'Яковлев ',
+    'Кудзиев Георгий',
+    'Кудзиев Алан',
+    'Кудзиев Алан',
+    'Кудзиев Алан',
+    'Кудзиев Алан',
+    'Кудзиев Алан',
+];
 
-// const phoneDataBase = [
-//     { surname:'Ярапов', name:'Дмитрий Сергеевич', phone:'+7 (902) 552-32-82', id:'10055604', light:'619',},  
-//     { surname: 'Сокольских', name:'Алексей Сергеевич', phone:'+79025523282', id:'10055604', light:'690'},
-//     { surname:'Гудиев', name:'Тамерлан Эльбрусович', phone:'+74454564564', id:'10055604', light:'1111'},
-//     { surname:'Зайцев', name:'Владимир', phone:'+785699956', id:'242424245', light:'6789086'},
-//     { surname:'Зайцев', name:'Андрей', phone:'+785699956', id:'242424245', light:'6789086'},
-//     { surname:'Рождественский', name:'Александр Владимирович', phone:'+7 (856) 999-56-55', id:'242424245', light:'6789086'},
-// ];
 
 
-// let XLSX = require("xlsx");
-// let workbook = XLSX.readFile("../data/workerlist.xlsx");
 
-// let worksheet = workbook.Sheets[workbook.SheetNames[0]];
 
-// for (let index = 4; index < 7; index++) {
-//     const id = worksheet[`A${index}`].v;
-//     const name = worksheet[`B${index}`].v;
-//     console.log({ url('../img/im.jpg)
-//     id:id, name: name
-// });
-// }
+
+
+
 
 
 

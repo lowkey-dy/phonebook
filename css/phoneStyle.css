@@ -224,7 +224,7 @@ input {
 
 .phone-book__input {
     border: none;
-    border-radius: 0px 20px;
+    border-radius: 20px 20px 0 0;
     background: linear-gradient(91deg, #FFF 45.27%, rgba(255, 255, 255, 0.00) 187.91%);
     backdrop-filter: blur(5px);
     display: flex;
@@ -402,6 +402,42 @@ input {
     right: -30px;
     bottom: 10px;
     color:#D6D6D6;
+}
+.search__wrapper {
+    position: relative;
+    
+}
+
+.search__result {
+    position: absolute;
+    z-index: 100500;
+    width: 408px;
+    background: #fff;
+    color:#000;
+    top:62px;
+    border-radius: 0 0 10px 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+
+}
+
+/* .search__result ul {
+    
+     
+} */
+
+.search__result ul li{
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 20px;
+    border-radius:5px;
+    transition:all 0.3s;
+}
+
+.search__result ul li:hover{
+    background-color:#007ec570;
 }
 
 

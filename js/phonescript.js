@@ -17,7 +17,40 @@
 
 // };
 
+// Выпадающий список начало
+const resultBox = document.querySelector('.search__result');
+const searchInput = document.getElementById('search_input');
 
+searchInput.onkeyup = function() {
+    let result = [];
+    let input = searchInput.value;
+    
+    if(input.length) {
+        result = base.filter((dataBase) => {
+           return dataBase.toLowerCase().includes(input.toLowerCase());
+        });
+
+        console.log(result);
+    }
+    display(result);
+
+    // if (result.lenght) {
+    //     resultBox.innerHTML = '';
+    // }
+};
+
+function display(result) {
+    const content = result.map((list) => {
+        return "<li onclick = selectInput(this)>" + list + "</li>";
+    });
+    resultBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+}
+
+function selectInput(list) {
+    searchInput.value = list.innerHTML;
+    resultBox.innerHTML = '';
+}
+//Выпадающий список конец
 
 //Запускает поиск при нажатии на "Enter"
 document.getElementById('search_input').addEventListener('keypress', function (e){
@@ -25,7 +58,11 @@ document.getElementById('search_input').addEventListener('keypress', function (e
         document.getElementById("search_btn").click();
     }
 });
-
+// document.getElementsByTagName('html').addEventListener('keypress', function (e){
+//     if (e.code === 'Enter') {
+//         document.getElementById("search_btn").click();
+//     }
+// });
 
 const search = document.querySelector('.search__btn').onclick = function() {
 
