@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 // let start = document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
 
 // --Выпадающий список начало
@@ -18,9 +18,9 @@ searchInput.onkeyup = function() {
     }
     display(result);
 
-    // if (!result.lenght) {
-    //     resultBox.innerHTML = '';
-    // }
+    if (!result.lenght) {
+        resultBox.innerHTML = '';
+    }
 };
 
 function display(result) {
@@ -68,8 +68,6 @@ const search = document.querySelector('.search__btn').onclick = function() {
    const testArray = document.querySelectorAll('.text_field');
 
     function writeUserInfo () { 
-        // const testArray = document.querySelectorAll('.text_field');
-        
         for (let i = 0; i < testArray.length; i ++) {
             if (testArray[i] == testArray[0]) {
                 testArray[0].textContent = userName.surname;
