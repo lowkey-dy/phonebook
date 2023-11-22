@@ -17,7 +17,7 @@
 
 // };
 
-// Выпадающий список начало
+// --Выпадающий список начало
 const resultBox = document.querySelector('.search__result');
 const searchInput = document.getElementById('search_input');
 
@@ -50,7 +50,7 @@ function selectInput(list) {
     searchInput.value = list.innerHTML;
     resultBox.innerHTML = '';
 }
-//Выпадающий список конец
+//Выпадающий список конец--
 
 //Запускает поиск при нажатии на "Enter"
 document.getElementById('search_input').addEventListener('keypress', function (e){
