@@ -170,7 +170,7 @@ const phoneDataBase = [
     { id:'10005499', surname:'Шульдешов', name:'Алексей Игоревич', phone:'+7(913)506-97-44', light:'307', photo:'img/no-avatar2.png'},  
     { id:'10008385', surname:'Юдин', name:'Сергей Олегович', phone:'+7(913)490-90-88', light:'1187', photo:'img/no-avatar2.png'},                                        
     { id:'10015356', surname:'Яковлев', name:'Вадим Сергеевич', phone:'+7(913)505-89-27', light:'1141', photo:'img/no-avatar2.png'},
-    { id:'10055604', surname:'Ярапов', name:'Дмитрий Сергеевич', phone:'+7(902)552-32-82', light:'619', photo:'img/im.jpg', prof:'Заместитель начальника участка'},
+    { id:'10055604', surname:'Ярапов Дмитрий Сергеевич', phone:'+7(902)552-32-82', light:'619', photo:'img/im.jpg', prof:'Заместитель начальника участка'},
     { id:'', surname:'', name:'', phone:'', light:''},
     { id:'', surname:'', name:'', phone:'', light:''},
 ];
@@ -347,7 +347,7 @@ const base = [
     'Шульдешов',   
     'Юдин',                                         
     'Яковлев', 
-    'Ярапов',    
+    'Ярапов Дмитрий Сергеевич',    
     
 ];
 
