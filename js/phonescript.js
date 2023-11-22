@@ -1,22 +1,6 @@
 'use strict';
 // let start = document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
 
-
-// document.querySelector('.phone-book__input').oninput = function() {
-//     let inputValue = this.value.trim();
-//     let userName = document.querySelectorAll('.worker__list li');
-//     if (inputValue != '') {
-//         userName.forEach(function (elem) {
-//             if (elem.innerText.search(inputValue) == -1) {
-//                 elem.classList.remove('hide');
-//             }
-//         })
-//     };
-
-//     console.log(userName);
-
-// };
-
 // --Выпадающий список начало
 const resultBox = document.querySelector('.search__result');
 const searchInput = document.getElementById('search_input');
