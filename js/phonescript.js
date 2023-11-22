@@ -18,9 +18,9 @@ searchInput.onkeyup = function() {
     }
     display(result);
 
-    // if (result.lenght) {
-    //     resultBox.innerHTML = '';
-    // }
+    if (!result.lenght) {
+        resultBox.innerHTML = '';
+    }
 };
 
 function display(result) {
@@ -33,6 +33,7 @@ function display(result) {
 function selectInput(list) {
     searchInput.value = list.innerHTML;
     resultBox.innerHTML = '';
+    
 }
 //Выпадающий список конец--
 
@@ -40,6 +41,7 @@ function selectInput(list) {
 document.getElementById('search_input').addEventListener('keypress', function (e){
     if (e.code === 'Enter') {
         document.getElementById("search_btn").click();
+
     }
 });
 // document.getElementsByTagName('html').addEventListener('keypress', function (e){
