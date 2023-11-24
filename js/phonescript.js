@@ -18,9 +18,9 @@ searchInput.onkeyup = function() {
     }
     display(result);
 
-    if (!result.lenght) {
-        resultBox.innerHTML = '';
-    }
+    // if (!result.lenght) {
+    //     resultBox.innerHTML = '';
+    // }
 };
 
 function display(result) {
@@ -146,4 +146,4 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
 
 // });
 
-console.dir(phoneDataBase);
+
