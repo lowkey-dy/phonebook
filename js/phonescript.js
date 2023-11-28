@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 // let start = document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
 
 // --Выпадающий список начало
@@ -23,21 +23,6 @@ searchInput.onkeyup = function() {
     // }
 };
 
-function idCopy () {
-    document.getElementById('id__wrapper').onclick = (event) => {
-        const elem = event.target;
-        
-        if (elem.classList.contains('copy-text')) {
-            console.log(elem);
-            navigator.clipboard.writeText(elem.innerHTML);
-            
-            elem.classList.toggle('copy-text1');
-           
-        }
-    }
-}
-idCopy();
-
 function display(result) {
     const content = result.map((list) => {
         return "<li onclick = selectInput(this)>" + list + "</li>";
@@ -52,17 +37,26 @@ function selectInput(list) {
 }
 //Выпадающий список конец--
 
+//Копируем табельный в буфер обмена
+function idCopy () {
+    document.getElementById('id__wrapper').onclick = (event) => {
+        const elem = event.target;
+        
+        if (elem.classList.contains('copy-text')) {
+            navigator.clipboard.writeText(elem.innerHTML);
+            
+            elem.classList.toggle('copy-text1');
+        }
+    }
+}
+idCopy();
+
 //Запускает поиск при нажатии на "Enter"
 document.getElementById('search_input').addEventListener('keypress', function (e){
     if (e.code === 'Enter') {
         document.getElementById("search_btn").click();
     }
 });
-// document.getElementsByTagName('html').addEventListener('keypress', function (e){
-//     if (e.code === 'Enter') {
-//         document.getElementById("search_btn").click();
-//     }
-// });
 
 const search = document.querySelector('.search__btn').onclick = function() {
 
@@ -103,10 +97,6 @@ const search = document.querySelector('.search__btn').onclick = function() {
 
     subtitle.textContent = userName.prof;
 
-    // if (phoneDataBase ) {
-    //     subtitle.textContent = 'Введите фамилию и я покажу';
-    // };
-
     console.dir(userName);
 
     // Достает фотку из базы данных
@@ -127,21 +117,19 @@ const search = document.querySelector('.search__btn').onclick = function() {
 
 // Чистим все нажатием на 'Escape'
 document.getElementById('search_input').addEventListener('keydown', function (event){
-
     if (event.code === 'Escape') {
         document.getElementById("clear__btn").click();
     }
 });
-
 
 // Чекает и удаляет данные в полях
 const reset = document.querySelector('.clear__btn').onclick = function() {
     
     //Очищает имя и фамилию
     const textRemove = document.querySelectorAll('.name-field'), 
-          deleteText = (arr) => { 
+            deleteText = (arr) => { 
         arr.forEach(item => {
-           item.textContent = '';
+            item.textContent = '';
         });
     };
     deleteText(textRemove);
