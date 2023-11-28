@@ -23,6 +23,21 @@ searchInput.onkeyup = function() {
     // }
 };
 
+function idCopy () {
+    document.getElementById('id__wrapper').onclick = (event) => {
+        const elem = event.target;
+        
+        if (elem.classList.contains('copy-text')) {
+            console.log(elem);
+            navigator.clipboard.writeText(elem.innerHTML);
+            
+            elem.classList.toggle('copy-text1');
+           
+        }
+    }
+}
+idCopy();
+
 function display(result) {
     const content = result.map((list) => {
         return "<li onclick = selectInput(this)>" + list + "</li>";

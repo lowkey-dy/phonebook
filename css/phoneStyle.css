@@ -199,6 +199,43 @@ input {
     margin-right: 10px;
 }
 
+.copy-text {
+    position: relative;
+}
+
+.copy-text::after  {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(/img/copy.png) no-repeat;
+    background-size: 20px;
+    right: -50px;
+    margin-top: 0px;
+    transition: all 0.3s;
+}
+
+.copy-text1::after  {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(/img/copy.png) no-repeat;
+    background-size: 20px;
+    right: -50px;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+
+
+.copy-text::after img  {
+   
+    width: 10px;
+    height: 10px;
+
+}
+
 .phone-book__main_photo {
     display: flex;
     justify-content: space-around;
@@ -445,6 +482,29 @@ input {
     background-color:#007ec570;
 }
 
+.id__wrapper {
+    display: flex;
+    cursor: pointer;
+}
+
+.copy-btn {
+    width: 40px;
+    height: 40px;
+    /* padding: 10px 10px 10px; */
+    background: transparent;
+    margin-left: 10px;
+    /* margin-top: 2px; */
+    color:#FFF;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.copy-btn img {
+    width: 25px;
+    height: 25px;
+}
 
 /* .phone-book_backside {
     z-index: 100;
