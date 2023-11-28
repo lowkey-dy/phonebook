@@ -52,7 +52,7 @@ function idCopy () {
 idCopy();
 
 //Запускает поиск при нажатии на "Enter"
-document.getElementById('search_input').addEventListener('keypress', function (e){
+document.getElementById('search_input').addEventListener('keypress', function (e) {
     if (e.code === 'Enter') {
         document.getElementById("search_btn").click();
     }
@@ -142,8 +142,8 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
 
     document.querySelector('.show-field_1').textContent = 'Телефон';
     document.querySelector('.show-field_2').textContent = 'Фонарь';
-    document.querySelector('.show-field_3').textContent = 'Табельный';       //<--- Переписать в массив
-    document.querySelector('.show-field_4').textContent = 'Введите фамилию и я покажу';       //<--- Переписать в массив
+    document.querySelector('.show-field_3').textContent = 'Табельный';  //<--- Переписать в массив
+    document.querySelector('.show-field_4').textContent = 'Введите фамилию и я покажу';  //<--- Переписать в массив
 
 };
 

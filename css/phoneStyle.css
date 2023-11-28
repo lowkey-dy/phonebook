@@ -227,15 +227,6 @@ input {
     transition: all 0.3s;
 }
 
-
-
-.copy-text::after img  {
-   
-    width: 10px;
-    height: 10px;
-
-}
-
 .phone-book__main_photo {
     display: flex;
     justify-content: space-around;
