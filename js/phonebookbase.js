@@ -69,7 +69,7 @@ const phoneDataBase = [
     { id:'10024715', surname:'Ильясов', name:'Дим Уралович', phone:'+7(913)497-19-25', light:'41', photo:'img/no-avatar2.png', prof:'ГРОЗ'},                                        
     { id:'10057462', surname:'Исаев', name:'Герейхан Абдуселимович', phone:'+7(905)977-69-15', light:'931', photo:'img/no-avatar2.png', prof:'ГРОЗ'},
     { id:'10259160', surname:'Исянгулов', name:'Владлен Ильдусович', phone:'+7(917)751-02-58', light:'908', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},
-    { id:'10025059', surname:'Капитанчук', name:'Валерий Васильевич', phone:'+7(950)968-02-73', light:'2229'},
+    { id:'10025059', surname:'Капитанчук', name:'Валерий Васильевич', phone:'+7(950)968-02-73', light:'2229', photo:'img/no-avatar2.png',prof:'Бурильщик шпуров'},
     { id:'10066286', surname:'Казанин', name:'Александр Петрович', phone:'+7(913)505-77-81', light:'1714', photo:'img/no-avatar2.png', prof:'ГРОЗ'},
     { id:'10052680', surname:'Казанцев', name:'Игорь Владимирович', phone:'+7(902)915-63-74', light:'1312', photo:'img/no-avatar2.png', prof:'Машинист буровой установки'},
     { id:'10067073', surname:'Карпинский', name:'Алексей Андреевич', phone:'+7(902)552-15-68', light:'1194', photo:'img/no-avatar2.png', prof:'Дробильщик'},  
