@@ -8,6 +8,10 @@ const searchInput = document.getElementById('search_input');
 searchInput.onkeyup = function() {
     let result = [];
     let input = searchInput.value;
+
+    if (!result.lenght) {
+        resultBox.innerHTML = '';
+    }
     
     if(input.length) {
         result = base.filter((dataBase) => {
@@ -18,9 +22,6 @@ searchInput.onkeyup = function() {
     }
     display(result);
 
-    // if (!result.lenght) {
-    //     resultBox.innerHTML = '';
-    // }
 };
 
 function display(result) {
@@ -57,6 +58,12 @@ document.getElementById('search_input').addEventListener('keypress', function (e
         document.getElementById("search_btn").click();
     }
 });
+
+// document.addEventListener('keydown', (e) => {
+//     if (e.code === "Escape") {
+//         document.querySelector('.clear__btn').click();
+//     }
+// });
 
 const search = document.querySelector('.search__btn').onclick = function() {
 
