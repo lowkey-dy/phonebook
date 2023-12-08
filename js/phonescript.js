@@ -12,7 +12,7 @@ searchInput.onkeyup = function() {
     if (!result.lenght) {
         resultBox.innerHTML = '';
     }
-    
+
     if(input.length) {
         result = base.filter((dataBase) => {
            return dataBase.toLowerCase().includes(input.toLowerCase());
@@ -36,6 +36,8 @@ function selectInput(list) {
     resultBox.innerHTML = '';
     
 }
+
+
 //Выпадающий список конец--
 
 //Копируем табельный в буфер обмена
