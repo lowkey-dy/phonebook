@@ -34,9 +34,7 @@ function display(result) {
 function selectInput(list) {
     searchInput.value = list.innerHTML;
     resultBox.innerHTML = '';
-    
 }
-
 
 //Выпадающий список конец--
 
@@ -110,17 +108,6 @@ const search = document.querySelector('.search__btn').onclick = function() {
 
     // Достает фотку из базы данных
     document.querySelector('.photo-field').style.backgroundImage = 'url("'+ userName.photo +'")';
-
-    
-    // const check = document.querySelectorAll('.test');
-    // const addData = (arr) => {
-    //     arr.forEach(item => {
-         
-            
-    //     }); 
-    // }
-    // addData(check);
-    // console.dir(check);
 
 };
 
