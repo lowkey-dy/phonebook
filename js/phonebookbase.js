@@ -25,7 +25,7 @@ const phoneDataBase = [
     { id:'10021266', surname:'Василенко', name:'Андрей Васильевич', phone:'+7(913)505-95-09', light:'384', photo:'img/vasil.jpg', prof:'Бурильщик шпуров'},
     { id:'10012277', surname:'Вдовиченко', name:'Александр Сергеевич', phone:'+7(913)167-78-40', light:'520', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},  
     { id:'10043962', surname:'Венидиктов', name:'Игорь Николаевич', phone:'+7(960)541-61-56', light:'201', photo:'img/no-avatar2.png', prof:'Сменный механик'},                                        
-    { id:'10254243', surname:'Волченко', name:'Никита Андреевич', phone:'+7(913)523-34-64', light:'431', photo:'img/no-avatar2.png', prof:'ГРОЗ'},
+    { id:'10254243', surname:'Волченко', name:'Никита Андреевич', phone:'+7(913)523-34-64', light:'431', photo:'img/nikit.jpg', prof:'ГРОЗ'},
     { id:'10253298', surname:'Воронин', name:'Николай Владимирович', phone:'+7(983)455-17-98', light:'806', photo:'img/no-avatar2.png', prof:'ГРОЗ'},
     { id:'10031424', surname:'Вшивков', name:'Иван Сергеевич', phone:'+7(987)628-51-31', light:'473', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},
     { id:'10033256', surname:'Гаврилин', name:'Николай Владимирович', phone:'+7(987)852-35-80', light:'847', photo:'img/niko.jpg', photo:'img/niko.jpg', prof:'ГРОЗ'},
