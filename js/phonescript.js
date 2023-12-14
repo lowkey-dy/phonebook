@@ -34,6 +34,7 @@ function display(result) {
 function selectInput(list) {
     searchInput.value = list.innerHTML;
     resultBox.innerHTML = '';
+    document.getElementById("search_btn").click();
 }
 
 //Выпадающий список конец--
@@ -56,6 +57,7 @@ idCopy();
 document.getElementById('search_input').addEventListener('keypress', function (e) {
     if (e.code === 'Enter') {
         document.getElementById("search_btn").click();
+        
     }
 });
 
