@@ -161,6 +161,7 @@ const phoneDataBase = [
     { id:'10024134', surname:'Харченко', name:'Евгений Игоревич', phone:'+7(913)167-66-20', light:'836', photo:'img/no-avatar2.png', prof:'ГРОЗ'},
     { id:'10271170', surname:'Цирк', name:'Александр Викторович', phone:'+7(983)267-99-63', light:'115', photo:'img/no-avatar2.png', prof:'Дробильщик'},
     { id:'10056699', surname:'Цомартов', name:'Алан Цараевич', phone:'+7(989)131-74-20', light:'841', photo:'img/no-avatar2.png', prof:'ГРОЗ'},
+    { id:'10252387', surname:'Чанчин', name:'Николай Петрович', phone:'+7(913)492-54-44', light:'302', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},
     { id:'10250590', surname:'Чернов', name:'Владимир Викторович', phone:'+7(923)323-28-08', light:'690', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},
     { id:'10021033', surname:'Черноморец', name:'Владислав Анатольевич', phone:'+7(913)491-40-88', light:'306', photo:'img/no-avatar2.png', prof:'ГРОЗ'},  
     { id:'10032039', surname:'Черных', name:'Иван Александрович', phone:'+7(913)500-40-20', light:'674', photo:'img/no-avatar2.png', prof:'ГРОЗ'},                                        
