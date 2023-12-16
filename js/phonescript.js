@@ -46,7 +46,6 @@ function idCopy () {
         
         if (elem.classList.contains('copy-text')) {
             navigator.clipboard.writeText(elem.innerHTML);
-            
             elem.classList.toggle('copy-text1');
         }
     }
@@ -88,23 +87,21 @@ const search = document.querySelector('.search__btn').onclick = function() {
     function writeUserInfo () { 
         for (let i = 0; i < testArray.length; i ++) {
             if (testArray[i] == testArray[0]) {
-                testArray[0].textContent = userName.surname;
-            } if (testArray[i] == testArray[1]) {
-                testArray[i].textContent = userName.name;
-            } if (testArray[i] == testArray[2]) {
-                testArray[2].textContent = userName.phone;
-            } if (testArray[i] == testArray[3]) {
-                testArray[3].textContent = userName.light;
-            } if (testArray[i] == testArray[4]) {
-                testArray[4].textContent = userName.id;
-            } 
+                testArray[0].textContent = userName.prof;
+            } else if (testArray[i] == testArray[1]) {
+                testArray[i].textContent = userName.surname;
+            } else if (testArray[i] == testArray[2]) {
+                testArray[2].textContent = userName.name;
+            } else if (testArray[i] == testArray[3]) {
+                testArray[3].textContent = userName.phone;
+            } else if (testArray[i] == testArray[4]) {
+                testArray[4].textContent = userName.light;
+            } else if (testArray[i] == testArray[5]) {
+                testArray[5].textContent = userName.id;
+            }
         }
     }
     writeUserInfo();
-
-    const subtitle = document.querySelector('.subtitle');
-
-    subtitle.textContent = userName.prof;
 
     console.dir(userName);
 
@@ -114,7 +111,7 @@ const search = document.querySelector('.search__btn').onclick = function() {
 };
 
 // Чистим все нажатием на 'Escape'
-document.getElementById('search_input').addEventListener('keydown', function (event){
+document.getElementById('body').addEventListener('keydown', function (event){
     if (event.code === 'Escape') {
         document.getElementById("clear__btn").click();
     }
@@ -137,6 +134,13 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
 
     //Убирает фото работника
     document.querySelector('.photo-field').style.backgroundImage = 'url(img/BgF.png)';
+
+    function clearFields() {
+        if (testArray.textContent = userName.prof) {
+            testArray.textContent = 'Введите фамилию и я покажу';
+        }
+    }
+    clearFields();
 
     document.querySelector('.show-field_1').textContent = 'Телефон';
     document.querySelector('.show-field_2').textContent = 'Фонарь';
