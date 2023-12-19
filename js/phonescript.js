@@ -53,6 +53,7 @@ function idCopy () {
 idCopy();
 
 //Запускает поиск при нажатии на "Enter"
+// Просто чтоб починить
 document.getElementById('search_input').addEventListener('keypress', function (e) {
     if (e.code === 'Enter') {
         document.getElementById("search_btn").click();
