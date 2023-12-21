@@ -108,7 +108,6 @@ const search = document.querySelector('.search__btn').onclick = function() {
 
     // Достает фотку из базы данных
     document.querySelector('.photo-field').style.backgroundImage = 'url("'+ userName.photo +'")';
-
 };
 
 // Чистим все нажатием на 'Escape'
@@ -120,6 +119,11 @@ document.getElementById('body').addEventListener('keydown', function (event){
 
 // Чекает и удаляет данные в полях
 const reset = document.querySelector('.clear__btn').onclick = function() {
+
+    document.querySelector('.show-field_1').textContent = 'Телефон';
+    document.querySelector('.show-field_2').textContent = 'Фонарь';
+    document.querySelector('.show-field_3').textContent = 'Табельный';  //<--- Переписать в массив
+    document.querySelector('.show-field_4').textContent = 'Введите фамилию и я покажу';  //<--- Переписать в массив
     
     //Очищает имя и фамилию
     const textRemove = document.querySelectorAll('.name-field'), 
@@ -142,11 +146,6 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
         }
     }
     clearFields();
-
-    document.querySelector('.show-field_1').textContent = 'Телефон';
-    document.querySelector('.show-field_2').textContent = 'Фонарь';
-    document.querySelector('.show-field_3').textContent = 'Табельный';  //<--- Переписать в массив
-    document.querySelector('.show-field_4').textContent = 'Введите фамилию и я покажу';  //<--- Переписать в массив
 
 };
 
