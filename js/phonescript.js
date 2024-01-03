@@ -61,12 +61,6 @@ document.getElementById('search_input').addEventListener('keypress', function (e
     }
 });
 
-// document.addEventListener('keydown', (e) => {
-//     if (e.code === "Escape") {
-//         document.querySelector('.clear__btn').click();
-//     }
-// });
-
 const search = document.querySelector('.search__btn').onclick = function() {
 
     //Если ввели с маленькой буквы, меняем на заглавную
