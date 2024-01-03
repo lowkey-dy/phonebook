@@ -2,8 +2,8 @@
 // let start = document.addEventListener('DOMContentLoaded', () => { // Запусткает выволнение JavaScript только после загружки всей страницы.
 
 // --Выпадающий список начало
-const resultBox = document.querySelector('.search__result');
-const searchInput = document.getElementById('search_input');
+const resultBox = document.querySelector('.search__result'),
+      searchInput = document.getElementById('search_input');
 
 searchInput.onkeyup = function() {
     let result = [];
@@ -26,9 +26,9 @@ searchInput.onkeyup = function() {
 
 function display(result) {
     const content = result.map((list) => {
-        return "<li onclick = selectInput(this)>" + list + "</li>";
+        return "<li class = 'list-item' onclick = selectInput(this)>" + list + "</li>";
     });
-    resultBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+    resultBox.innerHTML = "<ul class = 'list'>" + content.join('') + "</ul>";
 }
 
 function selectInput(list) {
@@ -36,6 +36,15 @@ function selectInput(list) {
     resultBox.innerHTML = '';
     document.getElementById("search_btn").click();
 }
+
+// document.querySelector('.list').addEventListener('keyup', function (e) {
+//     if (e.key) {
+//         // document.getElementById("search_btn").click();
+//         // console.log('Key: ', e.key);
+//         console.log('jhj');
+//         // e.preventDefault();
+//     }
+// }); 
 
 //Выпадающий список конец--
 
@@ -117,7 +126,7 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
     document.querySelector('.show-field_1').textContent = 'Телефон';
     document.querySelector('.show-field_2').textContent = 'Фонарь';
     document.querySelector('.show-field_3').textContent = 'Табельный';  //<--- Переписать в массив
-    document.querySelector('.show-field_4').textContent = 'Введите фамилию и я покажу';  //<--- Переписать в массив
+    document.querySelector('.show-field_4').textContent = 'Введите фамилию';  //<--- Переписать в массив
     
     //Очищает имя и фамилию
     const textRemove = document.querySelectorAll('.name-field'), 
