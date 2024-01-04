@@ -37,15 +37,6 @@ function selectInput(list) {
     document.getElementById("search_btn").click();
 }
 
-// document.querySelector('.list').addEventListener('keyup', function (e) {
-//     if (e.key) {
-//         // document.getElementById("search_btn").click();
-//         // console.log('Key: ', e.key);
-//         console.log('jhj');
-//         // e.preventDefault();
-//     }
-// }); 
-
 //Выпадающий список конец--
 
 //Копируем табельный в буфер обмена
@@ -142,13 +133,6 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
 
     //Убирает фото работника
     document.querySelector('.photo-field').style.backgroundImage = 'url(img/BgF.png)';
-
-    function clearFields() {
-        if (testArray.textContent = userName.prof) {
-            testArray.textContent = 'Введите фамилию и я покажу';
-        }
-    }
-    clearFields();
 
 };
 
