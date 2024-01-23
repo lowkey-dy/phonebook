@@ -79,23 +79,50 @@ const search = document.querySelector('.search__btn').onclick = function() {
    // Вывод данных из базы данных в HTML (Фамилия, Имя, Телефон, Номер фонаря, Табельный номер)
    const testArray = document.querySelectorAll('.text_field');
 
-    function writeUserInfo () { 
-        for (let i = 0; i < testArray.length; i ++) {
-            if (testArray[i] == testArray[0]) {
-                testArray[0].textContent = userName.prof;
-            } else if (testArray[i] == testArray[1]) {
-                testArray[i].textContent = userName.surname;
-            } else if (testArray[i] == testArray[2]) {
-                testArray[2].textContent = userName.name;
-            } else if (testArray[i] == testArray[3]) {
-                testArray[3].textContent = userName.phone;
-            } else if (testArray[i] == testArray[4]) {
-                testArray[4].textContent = userName.light;
-            } else if (testArray[i] == testArray[5]) {
-                testArray[5].textContent = userName.id;
+    // function writeUserInfo () { 
+    //     for (let i = 0; i < testArray.length; i ++) {
+    //         if (testArray[i] == testArray[0]) {
+    //             testArray[0].textContent = userName.prof;
+    //         } else if (testArray[i] == testArray[1]) {
+    //             testArray[i].textContent = userName.surname;
+    //         } else if (testArray[i] == testArray[2]) {
+    //             testArray[2].textContent = userName.name;
+    //         } else if (testArray[i] == testArray[3]) {
+    //             testArray[3].textContent = userName.phone;
+    //         } else if (testArray[i] == testArray[4]) {
+    //             testArray[4].textContent = userName.light;
+    //         } else if (testArray[i] == testArray[5]) {
+    //             testArray[5].textContent = userName.id;
+    //         }
+    //     }
+    // }
+    // writeUserInfo();
+
+    function writeUserInfo() {
+        for (let i = 0; i < testArray.length; i++) {
+            switch (testArray[i]) {
+                case testArray[0]:
+                    testArray[0].textContent = userName.prof;
+                    break;
+                case testArray[1]:
+                    testArray[i].textContent = userName.surname;
+                    break;
+                case testArray[2]:
+                    testArray[2].textContent = userName.name;
+                    break;
+                case testArray[3]:
+                    testArray[3].textContent = userName.phone;
+                    break;
+                case testArray[4]:
+                    testArray[4].textContent = userName.light;
+                    break;
+                case testArray[5]:
+                    testArray[5].textContent = userName.id;
+                    break;
             }
         }
     }
+    
     writeUserInfo();
 
     console.dir(userName);
