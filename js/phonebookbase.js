@@ -116,7 +116,7 @@ const phoneDataBase = [
     { id:'10005908', surname:'Осипов', name:'Александр Сергеевич', phone:'+7(913)500-64-62', light:'821', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},
     { id:'10065173', surname:'Оспанов', name:'Бауыржан Тахир-Улы', phone:'+7(913)497-98-96', light:'728', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},  
     { id:'10257197', surname:'Павлов', name:'Станислав Владимирович', phone:'+7(914)424-32-62', light:'148', photo:'img/no-avatar2.png', prof:'ГРОЗ'},                                        
-    { id:'10251850', surname:'Пашкевич', name:'Антон Евгеньевич', phone:'+7(902)948-21-01', light:'1747', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},
+    { id:'10251850', surname:'Пашкевич', name:'Антон Евгеньевич', phone:'+7(902)948-21-01', light:'1747', photo:'img/no-avatar2.png', prof:'ГРОЗ'},
     { id:'10067017', surname:'Петлицин', name:'Дмитрий Владимирович', phone:'+7(902)014-33-59', light:'1201', photo:'img/petl.jpg', prof:'Бурильщик шпуров'},
     { id:'10038063', surname:'Петров', name:'Артём Владимирович', phone:'+7(902)915-85-84', light:'295', photo:'img/no-avatar2.png', prof:'Бурильщик шпуров'},
     { id:'10054598', surname:'Петрушкин', name:'Владимир Николаевич', phone:'+7(906)901-51-08', light:'692', photo:'img/no-avatar2.png', prof:'Токарь'},
