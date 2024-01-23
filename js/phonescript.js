@@ -102,22 +102,22 @@ const search = document.querySelector('.search__btn').onclick = function() {
         for (let i = 0; i < testArray.length; i++) {
             switch (testArray[i]) {
                 case testArray[0]:
-                    testArray[0].textContent = userName.prof;
+                    testArray[i].textContent = userName.prof;
                     break;
                 case testArray[1]:
                     testArray[i].textContent = userName.surname;
                     break;
                 case testArray[2]:
-                    testArray[2].textContent = userName.name;
+                    testArray[i].textContent = userName.name;
                     break;
                 case testArray[3]:
-                    testArray[3].textContent = userName.phone;
+                    testArray[i].textContent = userName.phone;
                     break;
                 case testArray[4]:
-                    testArray[4].textContent = userName.light;
+                    testArray[i].textContent = userName.light;
                     break;
                 case testArray[5]:
-                    testArray[5].textContent = userName.id;
+                    testArray[i].textContent = userName.id;
                     break;
             }
         }
