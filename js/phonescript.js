@@ -141,10 +141,17 @@ document.getElementById('body').addEventListener('keydown', function (event){
 // Чекает и удаляет данные в полях
 const reset = document.querySelector('.clear__btn').onclick = function() {
 
-    document.querySelector('.show-field_1').textContent = 'Телефон';
-    document.querySelector('.show-field_2').textContent = 'Фонарь';
-    document.querySelector('.show-field_3').textContent = 'Табельный';  //<--- Переписать в массив
-    document.querySelector('.show-field_4').textContent = 'Введите фамилию';  //<--- Переписать в массив
+    let fields = ['.show-field_1', '.show-field_2', '.show-field_3', '.show-field_4'];
+    let values = ['Телефон', 'Фонарь', 'Табельный', 'Введите фамилию'];
+
+    for (let i = 0; i < fields.length; i++) {
+        document.querySelector(fields[i]).innerText = values[i];
+    }
+
+    // document.querySelector('.show-field_1').textContent = 'Телефон';
+    // document.querySelector('.show-field_2').textContent = 'Фонарь';
+    // document.querySelector('.show-field_3').textContent = 'Табельный';
+    // document.querySelector('.show-field_4').textContent = 'Введите фамилию'; 
     
     //Очищает имя и фамилию
     const textRemove = document.querySelectorAll('.name-field'), 
