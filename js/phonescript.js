@@ -31,6 +31,7 @@ function display(result) {
     resultBox.innerHTML = "<ul class = 'list'>" + content.join('') + "</ul>";
 }
 
+
 function selectInput(list) {
     searchInput.value = list.innerHTML;
     resultBox.innerHTML = '';
@@ -57,7 +58,6 @@ idCopy();
 document.getElementById('search_input').addEventListener('keypress', function (e) {
     if (e.code === 'Enter') {
         document.getElementById("search_btn").click();
-        
     }
 });
 
@@ -76,27 +76,8 @@ const search = document.querySelector('.search__btn').onclick = function() {
     // Поиск в базе данных по фамилии
     let userName = phoneDataBase.find(el => el.name == nameUpperCase || el.surname == nameUpperCase);
  
-   // Вывод данных из базы данных в HTML (Фамилия, Имя, Телефон, Номер фонаря, Табельный номер)
+   // Вывод данных из базы данных в HTML (Фамилия, Имя, Телефон, Номер фонаря, Табельный номер, Фото пользователя)
    const testArray = document.querySelectorAll('.text_field');
-
-    // function writeUserInfo () { 
-    //     for (let i = 0; i < testArray.length; i ++) {
-    //         if (testArray[i] == testArray[0]) {
-    //             testArray[0].textContent = userName.prof;
-    //         } else if (testArray[i] == testArray[1]) {
-    //             testArray[i].textContent = userName.surname;
-    //         } else if (testArray[i] == testArray[2]) {
-    //             testArray[2].textContent = userName.name;
-    //         } else if (testArray[i] == testArray[3]) {
-    //             testArray[3].textContent = userName.phone;
-    //         } else if (testArray[i] == testArray[4]) {
-    //             testArray[4].textContent = userName.light;
-    //         } else if (testArray[i] == testArray[5]) {
-    //             testArray[5].textContent = userName.id;
-    //         }
-    //     }
-    // }
-    // writeUserInfo();
 
     function writeUserInfo() {
         for (let i = 0; i < testArray.length; i++) {
@@ -119,16 +100,15 @@ const search = document.querySelector('.search__btn').onclick = function() {
                 case testArray[5]:
                     testArray[i].textContent = userName.id;
                     break;
+                case testArray[6]:
+                    testArray[i].style.backgroundImage = 'url("'+ userName.photo +'")';
+                    break;
             }
         }
     }
-    
     writeUserInfo();
 
     console.dir(userName);
-
-    // Достает фотку из базы данных
-    document.querySelector('.photo-field').style.backgroundImage = 'url("'+ userName.photo +'")';
 };
 
 // Чистим все нажатием на 'Escape'
@@ -138,7 +118,7 @@ document.getElementById('body').addEventListener('keydown', function (event){
     }
 });
 
-// Чекает и удаляет данные в полях
+// Чекает и удаляет данные в текстовых полях
 const reset = document.querySelector('.clear__btn').onclick = function() {
 
     let fields = ['.show-field_1', '.show-field_2', '.show-field_3', '.show-field_4'];
@@ -147,12 +127,7 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
     for (let i = 0; i < fields.length; i++) {
         document.querySelector(fields[i]).innerText = values[i];
     }
-
-    // document.querySelector('.show-field_1').textContent = 'Телефон';
-    // document.querySelector('.show-field_2').textContent = 'Фонарь';
-    // document.querySelector('.show-field_3').textContent = 'Табельный';
-    // document.querySelector('.show-field_4').textContent = 'Введите фамилию'; 
-    
+   
     //Очищает имя и фамилию
     const textRemove = document.querySelectorAll('.name-field'), 
             deleteText = (arr) => { 
