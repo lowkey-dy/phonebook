@@ -101,7 +101,7 @@ const search = document.querySelector('.search__btn').onclick = function() {
                     testArray[i].textContent = userName.id;
                     break;
                 case testArray[6]:
-                    testArray[i].style.backgroundImage = 'url("'+ userName.photo +'")';
+                    // testArray[i].style.backgroundImage = 'url("'+ userName.photo +'")';
                     break;
             }
         }
