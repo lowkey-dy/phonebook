@@ -146,5 +146,3 @@ const reset = document.querySelector('.clear__btn').onclick = function() {
 };
 
 // });
-
-
