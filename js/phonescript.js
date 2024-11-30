@@ -68,7 +68,7 @@ const search = document.querySelector('.search__btn').onclick = function() {
           nameUpperCase = enteredName.charAt(0).toUpperCase() + enteredName.slice(1); 
 
     // Запрещает нажимать кнопку Показать, если ничего не ввели и вводят числа
-    if (enteredName == '' || enteredName === Number) {
+    if (enteredName === '' || enteredName === number) {
         alert('Введите фамилию, полностью, на русском языке.');
         return false;
     }; 
